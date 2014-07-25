@@ -1,0 +1,17 @@
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/"
+  xmlns:jwplayer="http://developer.longtailvideo.com/">
+  <channel>
+    <title>Alhorreya Live Streaming</title>
+    <item>
+      <title>Watch Alhorreya Live</title>
+      <description>Stream quality has been adjusted automatically according to your internet connection.</description>
+      <media:group>
+        <media:content bitrate="800" url="alhorreya3" width="800" />
+        <media:content bitrate="450" url="alhorreya2" width="480" />
+        <media:content bitrate="250" url="alhorreya1" width="320" />
+      </media:group>
+      <jwplayer:streamer>rtmp://fms.pwmcdn.com:1935/alhorreya</jwplayer:streamer>
+    <jwplayer:provider>rtmp</jwplayer:provider>
+    </item>
+  </channel>
+</rss>
