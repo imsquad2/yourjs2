@@ -1,0 +1,38 @@
+<script src="jwplayer.js"></script>
+ <script src="key.js"></script>
+<div id='player'></div>
+<script type='text/javascript'>
+    jwplayer('player').setup({
+        file: 'http://cdnedvrnoordubaitv.endavomedia.com/smil:dmilivenoordubaitvhls.smil/playlist.m3u8',
+        image: 'http://i.imgur.com/wIIn4ux.jpg',
+        abouttext: 'Ctv.Eu5.Org',
+        aboutlink: 'http://ctv.eu5.org/',
+        width: '100%',
+        skin: 'roundster',
+        aspectratio: '16:9',
+        autostart: 'true',
+        primary: 'flash',
+sharing: {
+      link: "http://ctv.eu5.org/"
+   }
+    });
+jwplayer("player").onReady(function() {
+		var player = this;
+		player.addButton("desktop.png", "Change Aspect Ratio", function () {
+    		switch(player.getStretching()) {
+    		case "uniform":
+    			player.setStretching("fill");
+    			break;
+    		case "fill":
+    			player.setStretching("exactfit");
+    			break;
+    		case "exactfit":
+    			player.setStretching("none");
+    			break;
+    		default:
+    			player.setStretching("uniform");
+    			break;
+    		}
+    	}, "player");
+	});
+</script>
